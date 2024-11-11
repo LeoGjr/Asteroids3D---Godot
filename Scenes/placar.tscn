@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/placar.gd" type="Script" id=1]
+[ext_resource path="res://Material Asteroids/hud/backgroundprog.png" type="Texture" id=2]
+[ext_resource path="res://Material Asteroids/hud/barravidas.png" type="Texture" id=3]
+[ext_resource path="res://Material Asteroids/sons/explosao.wav" type="AudioStream" id=4]
+
+[node name="placar" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = 39.0
+margin_top = 667.0
+margin_right = 1248.0
+margin_bottom = 699.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="explode" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

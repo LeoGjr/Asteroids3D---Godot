@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/laser.wav-8d33bc554ab787bae0b9cebb6708da6a.sample"
+
+[deps]
+
+source_file="res://Material Asteroids/sons/laser.wav"
+dest_files=[ "res://.import/laser.wav-8d33bc554ab787bae0b9cebb6708da6a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
